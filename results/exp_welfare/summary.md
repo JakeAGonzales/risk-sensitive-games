@@ -26,7 +26,7 @@ $$I_F(\tau) = -\int_0^1 \langle F(q^\star + t\delta q), \delta q\rangle\, dt, \q
 
 computed via 16-node Gauss-Legendre quadrature. The decomposition identity holds to $10^{-10}$ at every $\tau$.
 
-**Both $I_F$ and $I_\mathcal{E}$ are negative for all $\tau > 0$** — the no-tradeoff regime. The game-incentive cost $I_F$ (rigidity penalty for departing from $q^\star$) is unambiguously negative under strong base-monotonicity, as Lemma 4.2 predicts. The externality term $I_\mathcal{E}$ is also negative because the risk-induced shift direction $v_\mathcal{R}$ is anti-aligned with the externality $\mathcal{E}(q^\star)$. Both terms pull welfare down — there's no externality-realignment benefit to offset the rigidity penalty. This is the regime of Corollary 4.2.4 ("welfare strictly decreases when game incentives dominate"), and explains *why* the welfare curves in Figure A are monotonically negative.
+Both $I_F$ and $I_\mathcal{E}$ are negative for all $\tau > 0$ — the no-tradeoff regime. The game-incentive cost $I_F$ (rigidity penalty for departing from $q^\star$) is unambiguously negative under strong base-monotonicity, as Lemma 4.2 predicts. The externality term $I_\mathcal{E}$ is also negative because the risk-induced shift direction $v_\mathcal{R}$ is anti-aligned with the externality $\mathcal{E}(q^\star)$. Both terms pull welfare down — there's no externality-realignment benefit to offset the rigidity penalty. This is the regime of Corollary 4.2.4 ("welfare strictly decreases when game incentives dominate"), and explains *why* the welfare curves in Figure A are monotonically negative.
 
 ## Figure C — equilibrium movement vs. risk intensity
 
@@ -44,9 +44,9 @@ This is the empirical content of the strengthened claim: **monotonicity-strength
 
 Two panels: $\lambda_\mathcal{R}(\tau)$ and $\mu_\mathcal{R}(\tau) = \mu_{\text{base}} - 2\lambda_\mathcal{R}(\tau)$ for both risks.
 
-**Entropic** strengthens monotonicity: $\lambda_R^{\text{ent}}(\tau) = -\tfrac{1}{2}\tau\sigma^2 < 0$ and $\mu_R^{\text{ent}}(\tau) = 1 + \tau\sigma^2$ rises linearly above $\mu_{\text{base}}$. Mechanism: the entropic risk operator adds a **quadratic-in-$q_i$** variance penalty $\tfrac{1}{2}\tau\sigma^2 q_i^2$ to each firm's cost, which differentiates to $\tau\sigma^2 q_i$ in the gradient and adds $\tau\sigma^2 I$ to the Jacobian — pure positive-definite perturbation.
+**Entropic** strengthens monotonicity: $\lambda_R^{\text{ent}}(\tau) = -\tfrac{1}{2}\tau\sigma^2 < 0$ and $\mu_R^{\text{ent}}(\tau) = 1 + \tau\sigma^2$ rises linearly above $\mu_{\text{base}}$. Mechanism: the entropic risk operator adds a quadratic-in-$q_i$ variance penalty $\tfrac{1}{2}\tau\sigma^2 q_i^2$ to each firm's cost, which differentiates to $\tau\sigma^2 q_i$ in the gradient and adds $\tau\sigma^2 I$ to the Jacobian — pure positive-definite perturbation.
 
-**CVaR** is monotonicity-neutral: $\lambda_R^{\text{CVaR}}(\tau) = 0$ exactly, and $\mu_R^{\text{CVaR}} = \mu_{\text{base}}$. Mechanism: the CVaR risk operator adds a **linear-in-$q_i$** term $\kappa_{\text{CVaR}}(\beta)\sigma q_i$ (where $\kappa_{\text{CVaR}}(\beta) = \phi(\Phi^{-1}(\beta))/(1-\beta)$), which differentiates to a constant $\kappa_{\text{CVaR}}\sigma$ in the gradient and contributes nothing to the Jacobian.
+**CVaR** is monotonicity-neutral: $\lambda_R^{\text{CVaR}}(\tau) = 0$ exactly, and $\mu_R^{\text{CVaR}} = \mu_{\text{base}}$. Mechanism: the CVaR risk operator adds a linear-in-$q_i$ term $\kappa_{\text{CVaR}}(\beta)\sigma q_i$ (where $\kappa_{\text{CVaR}}(\beta) = \phi(\Phi^{-1}(\beta))/(1-\beta)$), which differentiates to a constant $\kappa_{\text{CVaR}}\sigma$ in the gradient and contributes nothing to the Jacobian.
 
 The asymmetry comes from the structure of the risk penalty in this Gaussian-linear-loss setup: variance (quadratic) for entropic vs. standard deviation (linear after taking expectation) for CVaR. This is what places entropic and CVaR at different points on the same parabola in Figure D.
 
